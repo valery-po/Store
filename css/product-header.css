@@ -1,0 +1,93 @@
+.product-header {}
+
+.header-breadcrumbs {
+  margin-bottom: 35px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+}
+
+.header-breadcrumbs__item {
+  margin-right: 10px;
+  position: relative;
+}
+
+.header-breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -5px;
+  height: 14px;
+  width: 1px;
+  background-color: #bdbdbd;
+  opacity: 0.3;
+}
+
+.header-breadcrumbs__link {
+  opacity: 0.5;
+  font-family: Gudea;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #979695;
+}
+
+.header-breadcrumbs__link:not([href]) {
+  color: #92a351;
+}
+
+.product-header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-header__block-descr {
+  display: flex;
+  align-items: center;
+}
+
+.product-header__title {
+  font-family: Raleway;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #979695;
+  margin-right: 85px;
+}
+
+.product-header__price {
+  font-family: Raleway;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #979695;
+}
+
+.product-header__note {
+  display: flex;
+  align-items: center;
+  margin-top: -18px;
+  
+}
+
+.product-header__logo {
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #979695;
+  margin-right: 40px;
+}
+
+.product-header__logo-img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+
+

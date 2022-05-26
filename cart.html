@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CART</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/style.css">
+<!--  <link rel="stylesheet" href="css/product-body.css">-->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/media.css">
+
+
+  <script src="js/swiper.min.js" defer></script>
+  <script src="js/tabs.js" defer></script>
+  <script src="js/index.js" defer></script>
+  <script src="js/jquery-3.4.1.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo logo-title">
+          <h1 class="logo-title__top">Fabrique <span>Fine Furnishings</span></h1>
+        </div>
+        <div class="header__menu nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">Log In</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">Register</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">Wishlist</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__currency">
+          <div class="header__currency-name">Currency: </div>
+          <div class="header__currency-signs">
+            <span class="header__currensy-sign">£</span>
+            <span class="header__currensy-sign">$</span>
+            <span class="header__currensy-sign">€</span>
+          </div>
+        </div>
+        <div class="header__cart">
+          <div class="header__cart-image">
+            <img src="./img/icon-header/cart.png" alt="Icon: cart">
+          </div>
+          <div class="header__cart-account">
+            <h2 class="header__cart-title">Welcome yourname</h2>
+            <div class="header__cart-items"><span>8 items</span></div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="header__bottom">
+        <nav class="header__bottom-menu bottom-menu">
+          <ul class="bottom-menu__list">
+            <li class="bottom-menu__item">
+              <a href="index.html" class="bottom-menu__link">Home</a>
+            </li>
+            <li class="bottom-menu__item has-submenu">
+              <a href="#" class="bottom-menu__link">New In</a>
+            </li>
+            <li class="bottom-menu__item">
+              <a href="#" class="bottom-menu__link">Sale</a>
+            </li>
+            <li class="bottom-menu__item">
+              <a href="#" class="bottom-menu__link">Flooring</a>
+            </li>
+            <li class="bottom-menu__item">
+              <a href="#" class="bottom-menu__link">Curtains</a>
+            </li>
+            <li class="bottom-menu__item">
+              <a href="#" class="bottom-menu__link">bedding</a>
+            </li>
+            <li class="bottom-menu__item">
+              <a href="#" class="bottom-menu__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="#" class="search-form">
+          <input type="text" required class="search-input input" placeholder="Search..">
+          <button type="submit" class="search-button">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9005 16.4865L14.3205 12.9065L14.3195 12.9055C16.9095 9.569 16.4594 4.79387 13.2916 2.00007C10.1238 -0.793727 5.32983 -0.643497 2.34317 2.34317C-0.643497 5.32983 -0.793727 10.1238 2.00007 13.2916C4.79387 16.4594 9.569 16.9095 12.9055 14.3195L16.4855 17.8995C16.7364 18.1596 17.1081 18.2642 17.4578 18.1729C17.8075 18.0816 18.0808 17.8088 18.1725 17.4592C18.2643 17.1097 18.1603 16.7378 17.9005 16.4865ZM13.1967 11.0005C12.1249 12.8569 10.1441 14.0005 8.00052 14.0005C4.68681 14.0005 2.00052 11.3142 2.00052 8.00052C2.00052 4.68681 4.68681 2.00052 8.00052 2.00052C10.1441 2.00052 12.1249 3.14411 13.1967 5.00052C14.2685 6.85693 14.2685 9.14411 13.1967 11.0005Z" fill="black" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="products-header header-breadcrumbs">
+    <div class="container">
+      <div class="header-body">
+        <div class="header-body__left">
+          <ul class="header-breadcrumbs breadcrumbs">
+            <li class="header-breadcrumbs__item">
+              <a href="#" class="header-breadcrumbs__link">Home</a>
+            </li>
+            <li class="header-breadcrumbs__item">
+              <a class="header-breadcrumbs__link">Basket</a>
+            </li>
+          </ul>
+          <div class="product-header__block-descr">
+            <h2 class="product-header__title">Your basket</h2>
+          </div>
+        </div>
+
+        <div class="header-body__right">
+          <button class="product-item__button-basket product-buttons">Proceed To Checkout</button>
+          <div class="product-header__note">
+            <a href="#" class="product-header__note-link">Continue Shopping ></a>
+          </div>
+        </div>
+      </div>
+      <div class="cart">
+        <div class="cart__wrapper">
+          <div class="cart__header">
+            <ul class="cart__header-titles">
+              <li class="cart__header-item">Preview</li>
+              <li class="cart__header-item">Product Name</li>
+              <li class="cart__header-item">Unit Price</li>
+              <li class="cart__header-item">Quantity</li>
+              <li class="cart__header-item">Subtotal</li>
+              <li class="cart__header-item">Del</li>
+            </ul>
+          </div>
+          <div class="cart__body">
+             <ul class="cart__body-items">
+              
+               <li class="cart__body-item">
+                 <div class="cart__body-image">
+                   <img src="./img/cart/cart-1.jpg" alt="cartImage">
+                 </div>
+                 <h2 class="cart__body-name">Claire Aith Bath Sheets - Set of 6</h2>
+                 <span class="cart__body-price">$29.99</span>
+                 <div class="cart-body__select info-select">
+                   <div class="cart-body__title">1</div>
+                 </div>
+                 <div class="cart__body-subtotal">$29.99</div>
+                 <button class="cart__body-button">
+                   <img src="./img/cart/cart-delete.png" alt="ButtonIcon">
+                 </button>
+               </li>
+               
+                
+               <li class="cart__body-item">
+                 <div class="cart__body-image">
+                   <img src="./img/cart/cart-2.jpg" alt="cartImage">
+                 </div>
+                 <h2 class="cart__body-name">Claire Aith Zebra Rug</h2>
+                 <span class="cart__body-price">$129.99</span>
+                 <div class="cart-body__select info-select">
+                   <div class="cart-body__title">2</div>
+                 </div>
+                 <div class="cart__body-subtotal">$259.98</div>
+                 <button class="cart__body-button">
+                   <img src="./img/cart/cart-delete.png" alt="ButtonIcon">
+                 </button>
+               </li>
+               
+               <li class="cart__body-item">
+                 <div class="cart__body-image">
+                   <img src="./img/cart/cart-3.jpg" alt="cartImage">
+                 </div>
+                 <h2 class="cart__body-name">Real Pine Wood Flooring</h2>
+                 <span class="cart__body-price">$19.99</span>
+                 <div class="cart-body__select info-select">
+                   <div class="cart-body__title">5</div>
+                 </div>
+                 <div class="cart__body-subtotal">$99.95</div>
+                 <button class="cart__body-button">
+                   <img src="./img/cart/cart-delete.png" alt="ButtonIcon">
+                 </button>
+               </li>
+               
+              
+             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content">
+       <div class="footer-content__wrapper">
+        <div class="footer-content__left order-details">
+          <div class="order-details__title">Your total orders details</div>
+          <div class="order-details__form">
+            <div class="order-details__discount info-select">
+             <input class="info-select__input" placeholder="Discount code.." type="text">
+            </div>
+           <button class="info-select__button product-buttons">Update Basket</button>
+          </div>
+        </div>
+        <div class="footer-content__right">
+          <div class="footer-content__price">
+            <span class="footer-content__title">Total:</span>
+            <span class="footer-content__value">$389.92</span>
+          </div>
+          <button class="footer-content__button product-item__button-basket product-buttons">Proceed To Checkout</button>
+          <div class="footer__content-note">
+            <a href="#" class="footer__content-link product-header__note-link">Continue Shopping ></a>
+          </div>
+        </div>
+       </div>
+      
+      </div>
+      
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer__row">
+        <div class="footer__column">
+          <div class="footer__label">Information</div>
+          <nav class="footer__menu menu-footer">
+            <ul class="menu-footer__list">
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Contact Us</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Delivery</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Returns</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Tetms & Conditions</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Privacy Policy</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">About Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <div class="footer__label">Your Account</div>
+          <nav class="footer__menu menu-footer">
+            <ul class="menu__footer-list">
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Log In</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Create an Account</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Order History</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Wish List</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Cancel Account</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">NewsLetter Subscriptions</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <div class="footer__label">Contacts</div>
+          <div class="footer__contacts contacts-footer">
+            <a href="#" class="contacts-footer__item contacts-footer__item_name">Fabrique Fine Furnishing</a>
+            <a href="#" class="contacts-footer__item contacts-footer__item_map">308-310 SomeWhere Road,<br> Devon, PL9 1DD</a>
+            <a href="tel:+77473787200" class="contacts-footer__item contacts-footer__item_phone">Telephone: +7(747)3787200</a>
+            <a href="mailto:valery_po85@mail.ru" class="contacts-footer__item contacts-footer__item_email">E-mail: valery_po85@mail.ru</a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__label footer__label-active">Free Delivery!</div>
+          <div class="footer__payment payments-footer">
+            <div class="payments-footer__order">On all orders over $99.99</div>
+            <div class="payments-footer__notes">Valid on all of our stocked items</div>
+            <ul class="payments-footer__cards cards-payment">
+              <li class="cards-payment__link">
+                <a href="#">
+                  <img src="./img/footer/paypal.svg" alt="Card: Pay Pal">
+                </a>
+              </li>
+              <li class="cards-payment__link">
+                <a href="#">
+                  <img src="./img/footer/visa.svg" alt="Card: Visa">
+                </a>
+              </li>
+              <li class="cards-payment__link">
+                <a href="#">
+                  <img src="./img/footer/mastercard.svg" alt="Card: Master Card">
+                </a>
+              </li>
+
+              <li class="cards-payment__link">
+                <a href="#">
+                  <img src="./img/footer/discover.svg" alt="Card: Dilivery">
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="footer-body">
+      <div class="footer-body__container">
+        <div class="footer-body__copyright">
+          <div class="footer-body__logo">
+            <h3 class="footer-body__logo">Fabrique <span>Fine Furnishings</span></h3>
+            <div class="footer-body__logo-copyright">© 2012 All Rights Reserved</div>
+          </div>
+          <div class="footer-body__social">
+            <a href="#">
+              <img src="./img/footer/facebook.svg" alt="Icon: facebook">
+            </a>
+            <a href="#">
+              <img src="./img/footer/twitter.svg" alt="Icon: twitter">
+            </a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

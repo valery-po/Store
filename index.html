@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="js/jquery-3.4.1.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+   
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo logo-title">
+          <h1 class="logo-title__top">Fabrique <span>Fine Furnishings</span></h1>
+        </div>
+        <div class="header__menu nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">Log In</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">Register</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">Wishlist</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__currency">
+          <div class="header__currency-name">Currency: </div>
+          <div class="header__currency-signs">
+            <span class="header__currensy-sign">£</span>
+            <span class="header__currensy-sign">$</span>
+            <span class="header__currensy-sign">€</span>
+          </div>
+        </div>
+        <div class="header__cart">
+          <div class="header__cart-image">
+            <img src="./img/icon-header/cart.png" alt="Icon: cart">
+          </div>
+          <div class="header__cart-account">
+            <h2 class="header__cart-title">Welcome yourname</h2>
+            <div class="header__cart-items"><span>0 </span>items</div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="header__bottom">
+        <nav class="header__bottom-menu bottom-menu">
+          <ul class="bottom-menu__list">
+            <li class="bottom-menu__item">
+              <a href="#" class="bottom-menu__link">Home</a>
+            </li>
+            <li class="bottom-menu__item has-submenu">
+              <a href="#" class="bottom-menu__link">New In</a>
+            </li>
+            <li class="bottom-menu__item">
+              <a href="#" class="bottom-menu__link">Sale</a>
+            </li>
+            <li class="bottom-menu__item">
+              <a href="#" class="bottom-menu__link">Flooring</a>
+            </li>
+            <li class="bottom-menu__item">
+              <a href="#" class="bottom-menu__link">Curtains</a>
+            </li>
+            <li class="bottom-menu__item">
+              <a href="#" class="bottom-menu__link">bedding</a>
+            </li>
+            <li class="bottom-menu__item">
+              <a href="#" class="bottom-menu__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="#" class="search-form">
+          <input type="search" required class="search-input input" placeholder="Search..">
+          <button class="search-button">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9005 16.4865L14.3205 12.9065L14.3195 12.9055C16.9095 9.569 16.4594 4.79387 13.2916 2.00007C10.1238 -0.793727 5.32983 -0.643497 2.34317 2.34317C-0.643497 5.32983 -0.793727 10.1238 2.00007 13.2916C4.79387 16.4594 9.569 16.9095 12.9055 14.3195L16.4855 17.8995C16.7364 18.1596 17.1081 18.2642 17.4578 18.1729C17.8075 18.0816 18.0808 17.8088 18.1725 17.4592C18.2643 17.1097 18.1603 16.7378 17.9005 16.4865ZM13.1967 11.0005C12.1249 12.8569 10.1441 14.0005 8.00052 14.0005C4.68681 14.0005 2.00052 11.3142 2.00052 8.00052C2.00052 4.68681 4.68681 2.00052 8.00052 2.00052C10.1441 2.00052 12.1249 3.14411 13.1967 5.00052C14.2685 6.85693 14.2685 9.14411 13.1967 11.0005Z" fill="black" />
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="header__card hide">
+      <div class="header__overlay"></div>
+      <div class="header__cart-top">
+        <button id="header__cart-close">
+        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.49245" y1="2" x2="12.6" y2="13.1075" stroke="white" stroke-width="2.11065" stroke-linecap="round"/>
+          <line x1="1.40039" y1="13.1076" x2="12.5079" y2="2.0001" stroke="white" stroke-width="2.11065" stroke-linecap="round"/>
+       </svg>
+       </button>
+       <h3> Your Cart</h3>
+       <h2 class="subtotal">Subtotal:<span>$0</span></h2>
+      </div>
+      
+      <ul id="header__cart-body">
+        <!-- <h4 class="header__cart-empty">Your shopping cart is empty</h4>  -->
+      </ul>
+      <!-- <button class="btnka header__cart-button hidden">Check out</button> -->
+    </div>
+    </div>
+  </header>
+
+  <main class="banner">
+    <div class="container">
+      <div class="banner__wrapper">
+        <div class="banner__block block__image">
+          <h2 class="banner__block-title">Claire aitch linen</h2>
+          <p class="banner__block-description">
+            Indulge yourself with the very best 100% cotton towels and linen by top UK designer Claire Aitch.<br>Exclusive!</p>
+          <button class="banner-block__button block-button">Preview</button>
+        </div>
+        <div class="banner__aside aside-block">
+          <div class="aside-block__wrapper">
+
+            <div class="aside-block__sales">
+              <div class="aside-block__title">Sale on</div>
+              <div class="aside-block__logo">
+                <img src="./img/bg-main/bg-logo.png" alt="Icon: logo">
+              </div>
+            </div>
+            <div class="aside-block__subtitle">New lines just added!</div>
+
+            <div class="aside-block__image">
+              <img src="./img/bg-main/bg-towels.png" alt="Picture: towels">
+
+            </div>
+            <button class="aside-block__button block-button">Browse</button>
+          </div>
+
+          <div class="aside-block__description">
+            <div class="aside-block__text">
+              Subscribe to our free monthly
+              newsletter and be the first
+              to hear about our offers.
+            </div>
+            <div class="aside-block__adv">
+              <img src="./img/bg-main/news-icon.png" alt="Icon: News">
+            </div>
+          </div>
+          <form class="aside-block__form search-form" action="">
+            <input class="aside-block__input input" type="text" placeholder="Email..">
+            <button type="submit" class="aside-block__arrow">
+              <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.24" d="M14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28Z" fill="" />
+                <path d="M11.9983 8.66611L11.4637 9.20513C11.2879 9.39201 11.2 9.61012 11.2 9.8592C11.2 10.1133 11.2879 10.329 11.4637 10.5063L14.9281 14L11.4637 17.4937C11.288 17.671 11.2 17.8867 11.2 18.1407C11.2 18.3899 11.288 18.608 11.4637 18.7949L11.9984 19.3268C12.1789 19.5089 12.3952 19.6 12.6471 19.6C12.9037 19.6 13.1175 19.5089 13.2886 19.3268L17.9291 14.647C18.1097 14.4744 18.2 14.2589 18.2 14C18.2 13.746 18.1097 13.5279 17.9291 13.3459L13.2886 8.66611C13.1127 8.48876 12.8989 8.4 12.6471 8.4C12.3999 8.4 12.1837 8.48876 11.9983 8.66611Z" fill="white" />
+              </svg>
+
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="products">
+        <h2 class="products-title">New Products</h2>
+        <div class="products-wrapper">
+          <!-- <div class="products-column">
+            <article class="products-item">
+              <a href="products.html" target="_blank"  class="products-item__image">
+                <img src="./img/products/card-1.jpg" alt="Picture: card">
+              </a>
+              <div class="products-item__content">
+                <a href="products.html" class="products-item__link">
+                  <h3 class="products-item__title">Claire Aitch Bath Sheets</h3>
+                  <span class="products-item__price">£29.99</span>
+                </a>
+                <p class="products-item__text">
+                  Wrap yourself in the true epitome of luxurious 100% cotton towels and linen by the respected UK designer
+                  Claire Aitch.
+                </p>
+                <div class="products-item__buttons">
+                  <button class="product-item__button-view product-buttons">View</button>
+                  <button class="product-item__button-basket product-buttons">Add To Basket</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="products-column">
+            <article class="products-item">
+              <a href="#" class="products-item__image">
+                <img src="./img/products/card-2.jpg" alt="Picture: card">
+              </a>
+              <div class="products-item__content">
+                <a href="#" class="products-item__link">
+                  <h3 class="products-item__title">Chocolate Cushion Set</h3>
+                  <span class="products-item__price">£36.99</span>
+                </a>
+                <p class="products-item__text">
+                  Who can resist the temptation and comfort of this trilogy of chocolate coloured cushions? Deep filled for
+                  ultimate comfort and so frilly!
+                </p>
+                <div class="products-item__buttons">
+                  <button class="product-item__button-view product-buttons">View</button>
+                  <button class="product-item__button-basket product-buttons">Add To Basket</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="products-column">
+            <article class="products-item">
+              <a href="#" class="products-item__image">
+                <img src="./img/products/card-3.jpg" alt="Picture: card">
+              </a>
+              <div class="products-item__content">
+                <a href="#" class="products-item__link">
+                  <h3 class="products-item__title">Kay Lea Modern Bed Set</h3>
+                  <span class="products-item__price">£59.99</span>
+                </a>
+                <p class="products-item__text">
+                  For fans of minimalism we have the classic black and white bed set by new designer Kay Lea.
+                  2 pillow cases, quilt cover and sheet.
+                </p>
+                <div class="products-item__buttons">
+                  <button class="product-item__button-view product-buttons">View</button>
+                  <button class="product-item__button-basket product-buttons">Add To Basket</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="products-column">
+            <article class="products-item">
+              <a href="#" class="products-item__image">
+                <img src="./img/products/card-4.jpg" alt="Picture: card">
+              </a>
+              <div class="products-item__content">
+                <a href="#" class="products-item__link">
+                  <h3 class="products-item__title">Ali Baba Rug & Cushion</h3>
+                  <span class="products-item__price">£259.99</span>
+                </a>
+                <p class="products-item__text">
+                  A taste of the exotic with this hand made Turkish rug and matching cushion in stain resistant, softened 100% cotton.
+                </p>
+                <div class="products-item__buttons">
+                  <button class="product-item__button-view product-buttons">View</button>
+                  <button class="product-item__button-basket product-buttons">Add To Basket</button>
+                </div>
+              </div>
+            </article>
+          </div> -->
+         
+        </div>
+
+      </div>
+
+      <div class="products">
+        <h2 class="products-title">Featured Products</h2>
+        <div class="products-wrapper">
+          <!-- <div class="products-column">
+            <article class="products-item">
+              <a href="#" class="products-item__image">
+                <img src="./img/products/card-5.jpg" alt="Picture: card">
+              </a>
+              <div class="products-item__content">
+                <a href="#" class="products-item__link">
+                  <h3 class="products-item__title">Royale Curtains</h3>
+                  <span class="products-item__price">£159.99</span>
+                </a>
+                <p class="products-item__text">
+                  A range of colours compliment what have to be the thickest curtains we
+                  have ever seen. As soft as velvet and available in a range of sizes.
+                </p>
+                <div class="products-item__buttons">
+                  <button class="product-item__button-view product-buttons">View</button>
+                  <button class="product-item__button-basket product-buttons">Add To Basket</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="products-column">
+            <article class="products-item">
+              <a href="#" class="products-item__image">
+                <img src="./img/products/card-6.jpg" alt="Picture: card">
+              </a>
+              <div class="products-item__content">
+                <a href="#" class="products-item__link">
+                  <h3 class="products-item__title">Claire Aith Zebra Rug</h3>
+                  <span class="products-item__price">£129.99</span>
+                </a>
+                <p class="products-item__text">
+                  Contemporary, 3 inch deep sheeps wool rug by designer Claire Aitch.
+                  Hessian backed for extra long life and stain resistant.
+                </p>
+                <div class="products-item__buttons">
+                  <button class="product-item__button-view product-buttons">View</button>
+                  <button class="product-item__button-basket product-buttons">Add To Basket</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="products-column">
+            <article class="products-item">
+              <a href="#" class="products-item__image">
+                <img src="./img/products/card-7.jpg" alt="Picture: card">
+              </a>
+              <div class="products-item__content">
+                <a href="#" class="products-item__link">
+                  <h3 class="products-item__title">Real Pine Wood Flooring</h3>
+                  <span class="products-item__price">£19.99</span>
+                </a>
+                <p class="products-item__text">
+                  Save 50% on this real English Pine wood flooring while stocks last.
+                  Was £39.98 now £19.99 per square metre.
+                </p>
+                <div class="products-item__buttons">
+                  <button class="product-item__button-view product-buttons">View</button>
+                  <button class="product-item__button-basket product-buttons">Add To Basket</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="products-column">
+            <article class="products-item">
+              <a href="#" class="products-item__image">
+                <img src="./img/products/card-8.jpg" alt="Picture: card">
+              </a>
+              <div class="products-item__content">
+                <a href="#" class="products-item__link">
+                  <h3 class="products-item__title">Modern Flowers Bed Set</h3>
+                  <span class="products-item__price">£89.99</span>
+                </a>
+                <p class="products-item__text">
+                  Wrap yourself in the true epitome of luxurious 100% cotton towels and linen by the respected UK designer
+                  Claire Aitch.
+                </p>
+                <div class="products-item__buttons">
+                  <button class="product-item__button-view product-buttons">View</button>
+                  <button class="product-item__button-basket product-buttons">Add To Basket</button>
+                </div>
+              </div>
+            </article>
+          </div> -->
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer__row">
+        <div class="footer__column">
+          <div class="footer__label">Information</div>
+          <nav class="footer__menu menu-footer">
+            <ul class="menu-footer__list">
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Contact Us</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Delivery</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Returns</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Tetms & Conditions</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Privacy Policy</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">About Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <div class="footer__label">Your Account</div>
+          <nav class="footer__menu menu-footer">
+            <ul class="menu__footer-list">
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Log In</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Create an Account</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Order History</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Wish List</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">Cancel Account</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#" class="menu-footer__link">NewsLetter Subscriptions</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__column">
+          <div class="footer__label">Contacts</div>
+          <div class="footer__contacts contacts-footer">
+            <a href="#" class="contacts-footer__item contacts-footer__item_name">Fabrique Fine Furnishing</a>
+            <a href="#" class="contacts-footer__item contacts-footer__item_map">308-310 SomeWhere Road,<br> Devon, PL9 1DD</a>
+            <a href="tel:+77473787200" class="contacts-footer__item contacts-footer__item_phone">Telephone: +7(747)3787200</a>
+            <a href="mailto:valery_po85@mail.ru" class="contacts-footer__item contacts-footer__item_email">E-mail: valery_po85@mail.ru</a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__label footer__label-active">Free Delivery!</div>
+          <div class="footer__payment payments-footer">
+            <div class="payments-footer__order">On all orders over $99.99</div>
+            <div class="payments-footer__notes">Valid on all of our stocked items</div>
+            <ul class="payments-footer__cards cards-payment">
+              <li class="cards-payment__link">
+                <a href="#">
+                  <img src="./img/footer/paypal.svg" alt="Card: Pay Pal">
+                </a>
+              </li>
+              <li class="cards-payment__link">
+                <a href="#">
+                  <img src="./img/footer/visa.svg" alt="Card: Visa">
+                </a>
+              </li>
+              <li class="cards-payment__link">
+                <a href="#">
+                  <img src="./img/footer/mastercard.svg" alt="Card: Master Card">
+                </a>
+              </li>
+
+              <li class="cards-payment__link">
+                <a href="#">
+                  <img src="./img/footer/discover.svg" alt="Card: Dilivery">
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="footer-body">
+      <div class="footer-body__container">
+        <div class="footer-body__copyright">
+          <div class="footer-body__logo">
+            <h3 class="footer-body__logo">Fabrique <span>Fine Furnishings</span></h3>
+            <div class="footer-body__logo-copyright">© 2012 All Rights Reserved</div>
+          </div>
+          <div class="footer-body__social">
+            <a href="#">
+              <img src="./img/footer/facebook.svg" alt="Icon: facebook">
+            </a>
+            <a href="#">
+              <img src="./img/footer/twitter.svg" alt="Icon: twitter">
+            </a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+<script src="products.js"></script> 
+<script src="product.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
